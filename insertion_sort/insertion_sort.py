@@ -1,16 +1,15 @@
+import random
 def insertion_sort(lista):
+    print(f'Lista de entrada: {lista}')
+    for i in range(1,len(lista)):
+        eleito = lista[i]
+        j = i -1
+        while(j >=0 and eleito < lista[j]):
+            lista[j+1] = lista[j]
+            j -=1
+        lista[j+1] = eleito
     print(lista)
-    tamanho_lista = len(lista)
-    for i in range(tamanho_lista):
-        #aqui ele não percorre o ultimo laço pq o valor de j ultrapassa o valor do tamanho da lista
-        for j in range(i + 1,tamanho_lista): 
-            if(lista[j] < lista[i]):
-                lista[i],lista[j] = lista[j], lista[i]
-            print(f'i = {i} j = {j}')
-    
-    print(lista)
 
 
-
-lista = [3,2,1,14,77,90123,3,45,6,25,3,4,1]
+lista = [93,22,33,1,15,9,9,9,17,42,88,34,2,12,3,4,1]
 insertion_sort(lista)
