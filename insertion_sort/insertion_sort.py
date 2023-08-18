@@ -1,4 +1,3 @@
-import random
 def insertion_sort(lista):
     print(f'Lista de entrada: {lista}')
     for i in range(1,len(lista)):
@@ -11,5 +10,5 @@ def insertion_sort(lista):
     print(lista)
 
 
-lista = [93,22,33,1,15,9,9,9,17,42,88,34,2,12,3,4,1]
+lista = [1, 93,22,33,1,15,9,9,9,17,42,88,34,2,12,3,4,1]
 insertion_sort(lista)
