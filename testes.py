@@ -2,6 +2,7 @@ from sorting.bubble_sort import bubble_sort
 from sorting.insertion_sort import insertion_sort
 from sorting.selection_sort import selection_sort
 from sorting.merge_sort import merge_sort
+from sorting.quick_sort import quick_sort
 from random import sample
 
 lista_aleatoria = sample(range(1,1000),15)
@@ -28,3 +29,8 @@ print(f"Lista  antes do merge_sort: {lista4}")
 merge_sort(lista4)
 print(f"Lista  depois do merge_sort: {lista4} \n")
 
+
+lista5 = lista_aleatoria[:]
+print(f"Lista  antes do quick_sort: {lista5}")
+quick_sort(lista5)
+print(f"Lista  depois do quick_sort: {lista5} \n")
