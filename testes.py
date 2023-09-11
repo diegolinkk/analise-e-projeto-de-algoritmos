@@ -3,6 +3,7 @@ from sorting.insertion_sort import insertion_sort
 from sorting.selection_sort import selection_sort
 from sorting.merge_sort import merge_sort
 from sorting.quick_sort import quick_sort
+from sorting.quick_sort_2 import quick_sort as quick_sort_2
 from random import sample
 
 lista_aleatoria = sample(range(1,1000),15)
@@ -34,3 +35,10 @@ lista5 = lista_aleatoria[:]
 print(f"Lista  antes do quick_sort: {lista5}")
 quick_sort(lista5)
 print(f"Lista  depois do quick_sort: {lista5} \n")
+
+
+lista6 = lista_aleatoria[:]
+lista6 = [5,3,2,1]
+print(f"Lista  antes do quick_sort 2: {lista6}")
+quick_sort_2(lista6)
+print(f"Lista  depois do quick_sort 2: {lista6} \n")
