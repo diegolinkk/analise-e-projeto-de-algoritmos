@@ -4,3 +4,8 @@ O que define a complexidade de um algorítmo são somente os elementos que cresc
 # pendente
 [ ] implementar algorítmos de inversão de lista
 [ ] implementar verificar se lista tem itens duplicados
+
+
+# Exercícios Livro - Loiane
+[ ] implementar estrutura de dados de pilha
+[ ] implementar algorítmo de conversão de sistema numéricos
