@@ -7,6 +7,7 @@
 # from random import sample
 from sorting.reverse_sort import reverse_sort
 from searching.verificar_item_duplicado import verificar_item_duplicado
+from lists.pilha import Pilha
 
 # lista_aleatoria = sample(range(1,1000),15)
 # print(lista_aleatoria)
@@ -54,3 +55,20 @@ print(f"Lista invertida{lista}")
 #TESTE DE VERIFICAR DUPLICADOS
 lista = [1,2,3,4,5,6,7,8,9,10,4]
 print(verificar_item_duplicado(lista))
+
+
+
+p1 = Pilha()
+print(p1.is_empty())
+p1.push(1)
+p1.push(3)
+p1.push(5)
+print(p1.size())
+print(p1.is_empty())
+print(p1.peek())
+print(p1.peek())
+print(p1.peek())
+p1.clear()
+p1.push(12)
+print(p1.lista)
+print(p1.size())
