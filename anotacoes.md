@@ -7,5 +7,6 @@ O que define a complexidade de um algorítmo são somente os elementos que cresc
 
 
 # Exercícios Livro - Loiane
-[ ] implementar estrutura de dados de pilha
-[ ] implementar algorítmo de conversão de sistema numéricos
+[x] implementar estrutura de dados de pilha
+[x] implementar algorítmo de conversão de sistema numéricos
+[x] implementar estrutura de dados de fila
