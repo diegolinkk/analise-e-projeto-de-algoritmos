@@ -10,6 +10,7 @@ from searching.verificar_item_duplicado import verificar_item_duplicado
 from lists.pilha import Pilha
 from lists.conversores_aritmeticos import conversor_binario, conversor_de_base
 from lists.fila import Fila
+from lists.deque import Deque
 
 # lista_aleatoria = sample(range(1,1000),15)
 # print(lista_aleatoria)
@@ -119,3 +120,65 @@ f1.enqueue("Texugo")
 f1.size()
 f1.toString()
 print(f1.size())
+
+
+#testando deque
+animais = Deque()
+print("inicializando deque: ")
+animais.to_string()
+print("\n")
+#adicionar tres itens
+print("Adicionando três itens: ")
+animais.add_back("cachorro")
+animais.add_back("gato")
+animais.add_back("papagaio")
+animais.to_string()
+print("\n")
+
+#adicionar item no final
+print("Adicionando item no final do deque")
+animais.add_back("rinoceronte")
+animais.to_string()
+
+#adicionar item no começo
+print("Adicionando itens no começo do deque")
+animais.add_front("Ramster")
+animais.to_string()
+
+#remover item no final
+print("Remover item do final do deque")
+animais.remove_back()
+animais.to_string()
+
+#remover item no começo
+print("Remover item no começo do deque")
+animais.remove_front()
+animais.to_string()
+
+#remover item no final pela segunda vez
+print("Remover item do final do deque pela segunda vez")
+animais.remove_back()
+animais.to_string()
+#limpar lista
+
+#remover item no começo pela segunda vez
+print("Remover item no começo do deque  pela segunda vez")
+animais.remove_front()
+animais.to_string()
+
+#remover ultimo elemento da lista
+print("Remover ultimo elemento do deque")
+animais.remove_back()
+animais.remove_back()
+animais.remove_front()
+animais.to_string()
+
+#adicionando mais um item na lista
+print("Adicionando mais um item no deque")
+animais.add_back("texugo")
+animais.to_string()
+
+#limpando a lista
+print("limpando o deque")
+animais.clear()
+animais.to_string()
