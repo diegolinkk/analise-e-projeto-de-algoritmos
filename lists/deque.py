@@ -28,11 +28,14 @@ class Deque:
     def remove_front(self):
         if self.is_empty() == False:
             index = self.lowest_count
+            elemento_removido = self.items[index]
             while index < (self.count - 1):
                 self.items[index] = self.items[index + 1]
                 index +=1
             self.count -=1
+           
             del self.items[self.count]
+            return elemento_removido
         else:
             return None
 
